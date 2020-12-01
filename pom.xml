@@ -42,6 +42,15 @@
 		                	<key>value</key>
 		            	</properties>
 		        </cloudHubDeployment>
+		        <executions>
+		        	<execution>
+		        		<id>deploy</id>
+		        		<phase>deploy</phase>
+		        		<goals>
+		        			<goal>deploy</goal>
+		        		</goals>
+		        	</execution>
+		        </executions>
 				</configuration>
 			</plugin>
 		</plugins>
