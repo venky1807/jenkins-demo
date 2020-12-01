@@ -39,6 +39,7 @@
 		            	<environment>${anypoint.environment}</environment>
 		            	<workers>1</workers>
 		            	<workerType>Micro</workerType>
+		            	<objectStoreV2>true</objectStoreV2>
 		        </cloudHubDeployment>
 				</configuration>
 			</plugin>
