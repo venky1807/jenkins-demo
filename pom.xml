@@ -32,15 +32,16 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<username>venky135719</username>
-						<password>Reddy@123</password>
-						<environment>Sandbox</environment>
-						<applicationName>jenkins-demo</applicationName>
-						<muleVersion>4.3.0</muleVersion>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
-					</cloudHubDeployment>
+		            	<uri>https://anypoint.mulesoft.com</uri>
+		            	<muleVersion>${mule.version}</muleVersion>
+		            	<username>${anypoint.username}</username>
+		            	<password>${anypoint.password}</password>
+		            	<applicationName>jenkins-demo</applicationName>
+		            	<environment>${anypoint.environment}</environment>
+		            	<properties>
+		                	<key>value</key>
+		            	</properties>
+		        </cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
