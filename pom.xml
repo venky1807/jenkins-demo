@@ -32,25 +32,14 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-		            	<uri>https://anypoint.mulesoft.com</uri>
 		            	<muleVersion>${mule.version}</muleVersion>
 		            	<username>${anypoint.username}</username>
 		            	<password>${anypoint.password}</password>
 		            	<applicationName>jenkins-demo</applicationName>
 		            	<environment>${anypoint.environment}</environment>
-		            	<properties>
-		                	<key>value</key>
-		            	</properties>
+		            	<workers>1</workers>
+		            	<workerType>Micro</workerType>
 		        </cloudHubDeployment>
-		        <executions>
-		        	<execution>
-		        		<id>deploy</id>
-		        		<phase>deploy</phase>
-		        		<goals>
-		        			<goal>deploy</goal>
-		        		</goals>
-		        	</execution>
-		        </executions>
 				</configuration>
 			</plugin>
 		</plugins>
