@@ -37,11 +37,4 @@ jobs:
       - run:
           name: cloudhub deployment
           command: |
-            mvn -s settings.xml clean deploy -DmuleDeploy\
--DMULE_ENV=${MULE_ENV}\
--DMULE_VERSION=${MULE_VERSION}\   
--DMULE_APP_NAME=${MULE_APP_NAME}\
--DMULE_WORKER_TYP=${MULE_WORKER_TYP}\ 
--DMULE_WORKER=${MULE_WORKER} \
--DMULE_USERNAME=${MULE_USERNAME}\
--Dcentral_password=${central_password}\
+            mvn -s settings.xml clean deploy -DmuleDeploy
