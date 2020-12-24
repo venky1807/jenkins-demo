@@ -30,18 +30,6 @@ jobs:
             - ~/.m2
           key: 'mulesoft-ci-cd-{{ checksum "pom.xml" }}'
       - run:
-          name: Build
-          command: |
-            mvn clean compile -s settings.xml
-      - run:
-          name: mUnit Test
-          command: |
-            mvn clean test -s settings.xml
-      - run:
-          name: artifactory deployment
-          command: |
-            mvn clean deploy -s settings.xml
-      - run:
           name: cloudhub deployment
           command: |
             mvn -s settings.xml clean deploy -DmuleDeploy
