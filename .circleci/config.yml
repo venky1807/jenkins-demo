@@ -8,12 +8,14 @@ workflows:
           context: mule		  
 jobs:
   build:
-    environment:
-        MULE_VERSION: 4.3.0
-        MULE_APP_NAME: jenkins-demo-venky
-        MULE_ENV: SANDBOX
-        MULE_WORKER_TYP: MICRO
-        MULE_WORKER: 1
+    docker:
+      - image: 'circleci/openjdk:8-jdk'
+        environment:
+          MULE_VERSION: 4.3.0
+          MULE_APP_NAME: jenkins-demo-venky
+          MULE_ENV: SANDBOX
+          MULE_WORKER_TYP: MICRO
+          MULE_WORKER: 1
     steps:
       - checkout
       - restore_cache:
