@@ -33,10 +33,10 @@
 				<configuration>
 					<cloudHubDeployment>
 		            	<muleVersion>${mule.version}</muleVersion>
-		            	<username>${anypoint.username}</username>
-		            	<password>${anypoint.password}</password>
+		            	<username>venky2121</username>
+		            	<password>Reddy@1357</password>
 		            	<applicationName>jenkins-demo-venky</applicationName>
-		            	<environment>${anypoint.environment}</environment>
+		            	<environment>Sandbox</environment>
 		            	<workers>1</workers>
 		            	<workerType>Micro</workerType>
 		            	<objectStoreV2>true</objectStoreV2>
