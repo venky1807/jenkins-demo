@@ -5,13 +5,12 @@ workflows:
   build-deploy:
     jobs:
       - build:
-          context: mule
-		  
+          context: mule		  
 jobs:
   build:
     environment:
         MULE_VERSION: 4.3.0
-        MULE_APP_NAME: jenkins-demo
+        MULE_APP_NAME: jenkins-demo-venky
         MULE_ENV: SANDBOX
         MULE_WORKER_TYP: MICRO
         MULE_WORKER: 1
