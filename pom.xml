@@ -32,7 +32,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-		            	<muleVersion>${mule.version}</muleVersion>
+		            	<muleVersion>4.3.0</muleVersion>
 		            	<username>venky2121</username>
 		            	<password>Reddy@1357</password>
 		            	<applicationName>jenkins-demo-venky</applicationName>
